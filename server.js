@@ -6,6 +6,11 @@ fastify.get('/', function handler (request, reply) {
   reply.send({ hello: 'world' })
 })
 
+// membuat halaman coba
+fastify.get('/coba', function handler (request, reply) {
+  reply.send({ coba: 'halaman coba'})
+})
+
 // Run the server!
 fastify.listen({ port: 3000 }, (err) => {
   if (err) {
